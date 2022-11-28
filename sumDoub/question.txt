@@ -1,0 +1,1 @@
+2 tane 16 bitlik sayıyı toplayarak 32 bitlik bir sayıya yazan assm kodunu yazınız. 
