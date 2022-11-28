@@ -1,0 +1,97 @@
+Microsoft (R) Macro Assembler Version 5.10                  11/28/22 10:41:0
+                                                             Page     1-1
+
+
+       1 0000				stacksg         segment para stack 'sta
+					cksg'
+       2 0000  0014[			                dw 20 dup(?)
+       3	   ????			
+       4			 ]	
+       5				
+       6 0028				stacksg         ends
+       7 0000				datasg          segment para 'datasg'
+       8 0000  00000000			                topRak          dd  0
+       9 0004  0000			                ustunde         dw  0
+      10 0006  0000			                ustOrt          dw  0
+      11 0008  0010			                topBask         dw  16
+      12 000A  000A FFFB 0002 0005	                capitals        dw  10,
+					-5,2,5,6,7,222,4,6,7,8,8,9,6,55,-60 
+      13       0006 0007 00DE 0004	
+      14       0006 0007 0008 0008	
+      15       0009 0006 0037 FFC4	
+      16				                
+      17 002A				datasg          ends
+      18 0000				codesg          segment para 'codesg'
+      19				                assume cs:codesg,ss:sta
+					cksg,ds:datasg
+      20 0000				ana             proc far
+      21 0000  1E			                push ds
+      22 0001  33 C0			                xor ax,ax
+      23 0003  50			                push ax
+      24 0004  B8 ---- R		                mov ax,datasg
+      25 0007  8E D8			                mov ds,ax
+      26 0009  8B 0E 0008 R		                mov cx,topBask
+      27 000D  33 F6			                xor si,si
+      28 000F  8B 84 000A R		    buyukdon:   mov ax,capitals[si]
+      29 0013  3D 0000			                cmp ax,0000h
+      30 0016  7E 0D			                jle don
+      31 0018  01 06 0000 R		                add word ptr [topRak],a
+					x
+      32 001C  83 16 0002 R 00		                adc word ptr [topRak+2]
+					,0
+      33 0021  FF 06 0004 R		                inc ustunde
+      34 0025  83 C6 02			        don:    add si,2
+      35 0028  E2 E5			                loop buyukdon  
+      36 002A  8B 16 0002 R		                mov dx,word ptr [topRak
+					+2]
+      37 002E  A1 0000 R		                mov ax,word ptr [topRak
+					]
+      38 0031  F7 36 0004 R		                div ustunde
+      39 0035  A3 0006 R		                mov ustOrt,ax
+      40 0038  CB			                retf
+      41 0039				ana             endp
+      42 0039				codesg          ends
+      43				end ana
+Microsoft (R) Macro Assembler Version 5.10                  11/28/22 10:41:0
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODESG . . . . . . . . . . . . .  	0039	PARA	NONE	'CODESG'
+DATASG . . . . . . . . . . . . .  	002A	PARA	NONE	'DATASG'
+STACKSG  . . . . . . . . . . . .  	0028	PARA	STACK	'STACKSG'
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+ANA  . . . . . . . . . . . . . .  	F PROC	0000	CODESG	Length = 0039
+
+BUYUKDON . . . . . . . . . . . .  	L NEAR	000F	CODESG
+
+CAPITALS . . . . . . . . . . . .  	L WORD	000A	DATASG
+
+DON  . . . . . . . . . . . . . .  	L NEAR	0025	CODESG
+
+TOPBASK  . . . . . . . . . . . .  	L WORD	0008	DATASG
+TOPRAK . . . . . . . . . . . . .  	L DWORD	0000	DATASG
+
+USTORT . . . . . . . . . . . . .  	L WORD	0006	DATASG
+USTUNDE  . . . . . . . . . . . .  	L WORD	0004	DATASG
+
+@CPU . . . . . . . . . . . . . .  	TEXT  0101h		
+@FILENAME  . . . . . . . . . . .  	TEXT  ALTEROXY		
+@VERSION . . . . . . . . . . . .  	TEXT  510		
+
+
+     37 Source  Lines
+     37 Total   Lines
+     16 Symbols
+
+  47266 + 459994 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors

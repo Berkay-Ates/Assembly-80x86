@@ -1,0 +1,3 @@
+257 tane dünya baskentlerinin yükseklikleri deniz seviyesinin üstünde ve altında olmak üzere ayrı ayrı hesaplanmıştır. Deniz 
+seviyesinin altında oksijen sabit. Deniz seviyesinin üstündekilerde ise oksijen rakım oranında. Deniz seviyesinin üstünde 
+olan baskentlerin ortalama oksijen seviyesini bulan exe tipi assm kodunu yazınız 

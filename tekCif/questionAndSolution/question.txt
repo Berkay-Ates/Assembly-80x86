@@ -1,0 +1,1 @@
+10 elemanlı bir dizi icerisinde bulunan tek ve cif elemanların sayısını bulan exe tipi asm kodunu yazınız
