@@ -1,0 +1,5 @@
+bir yil boyuca belirli bir alanın sıcaklık degerleri bulunan bir dizide -20 nin altında sıcaklık degeri olup olmadıgını bulan 
+com tipi programı 1. ve 2. syntaxlarla yazınınz. 
+
+eger -20 nin altında gun yoksa sonuc isimli degiskene 0
+eger -20 den soguk gun varsa bu defa sonuc isimli degiskene 1 degerini atınız
