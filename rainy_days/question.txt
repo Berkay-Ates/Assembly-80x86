@@ -1,0 +1,2 @@
+15 gün icrisinde yagan yagmur oranları bir dizi icrisinde saklanmaktadır. Bu günler icerisinde en fazla yagmur yagan gunki yagan yagmur 
+oranını ve ortalama yagan yagmur oranını hesaplayan harici yordam tanımını(exe) ve normal yordam tanımını(com) assm dili ile kodlayınız.

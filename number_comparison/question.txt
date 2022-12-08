@@ -1,0 +1,2 @@
+2 sayıyı (byte tipinde) birbiriyle kıyaslayan ve kucuk olanı al registerine yazan com tipi programda harici yordam iceren programı yazınız 
+bl registeri sonra sonucu enBuyuk isimli bir degiskene atanmak zorundadır 

@@ -1,0 +1,4 @@
+Bir dizinin aderesinin sı registeri uzerinden alan ve sonrasında (byte tanımlı) dizinin elemanlarını toplayarak sonucu ax uzerine 
+donderen harici yordam tanımını exe tipinde yazınız.
+
+Program sonlanmadan ax registeri uzerindeki deger toplam degiskenine yazılmalıdir 

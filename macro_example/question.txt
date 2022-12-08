@@ -1,0 +1,7 @@
+iki adet byte tipindeki sayiyi carpip sonucu ax icerisine atan macro tanımını com tipinde yapınız . sonrasında ax icerisindeki sonucu 
+sonuc ismideki delmanın icerisine yazılması gerkmektedir. 
+
+
+sayilar macroya al ve bl uzerinden gonderilebilirler 
+yani mul bl ile islem gerceklestirilebilir 
+amac makro tanımlamak 

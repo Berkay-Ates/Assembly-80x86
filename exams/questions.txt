@@ -1,0 +1,2 @@
+280 kisinin girdigi assembly sinavinda 40 in ustundeki ogrencilerinden not ortalamasını bulunuz. Sonrasında bu ortalamaya gore 
+dersten basarılı olanlar, bute girenler ve direk kalanlar olarak ogrencilerin sayılarını bulunuz. 
