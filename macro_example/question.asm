@@ -18,8 +18,6 @@ bSayisi     db  20
 cSayisi     dw  0 
 codesg      ends
             end ana
-
-
-
+            
 
 ;* com tipi syntax 2 ile yazalım yani ds codesg den sonra gelecek sekilde 
