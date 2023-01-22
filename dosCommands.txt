@@ -1,0 +1,17 @@
+Dosbox codes 
+- Mount c /Users/usera/Desktop/development
+
+- masm $dosya_adı 
+- link $dosya_adı
+- u codesg içerisindeki kodlar 
+- r registerların degerleri 
+- d  ds:0 datasg nin degerleri 
+- q debug modu kapat 
+- g calıstırabildigin kadar çalıştır 
+- l kodları bastan yükle  
+- d cs:002c ilgili adresten sonra codesg yi göster demek
+- u cs:010c 
+- d ss:0022 Stack segmenti 0022 den itibaren göster 
+- p loopu bitir bittiği yerden beni devam ettir
+- Cls ekranı temizler 
+- T5 5 satır işletir 
